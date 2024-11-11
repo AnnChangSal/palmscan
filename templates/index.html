@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PalmScan - Upload Your Palm Image</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Welcome to PalmScan</h1>
+    <p>Upload your palm image to receive a personalized palmistry reading.</p>
+    <p>For best results:</p>
+    <ul>
+        <li>Use a well-lit environment.</li>
+        <li>Place your hand against a plain background.</li>
+        <li>Ensure your entire palm is visible and in focus.</li>
+    </ul>
+    <form action="{{ url_for('upload') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="file" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+
+    <!-- AdSense Ad Unit -->
+    <div class="ad-container">
+        <!-- Google AdSense Code -->
+        <!-- Replace with your actual AdSense code -->
+    </div>
+</body>
+</html>

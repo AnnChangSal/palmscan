@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PalmScan - Your Reading</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <h1>Your Palmistry Reading</h1>
+
+    <!-- AdSense Ad Unit -->
+    <div class="ad-container">
+        <!-- Google AdSense Code -->
+        <!-- Replace with your actual AdSense code -->
+    </div>
+
+    {% if processed_filename %}
+        <h2>Detected Palm Lines:</h2>
+        <img src="{{ url_for('static', filename='uploads/' + processed_filename) }}" alt="Palm Lines" width="300">
+    {% else %}
+        <p>Could not detect a hand in the image. Please try again with a clear image of your palm.</p>
+    {% endif %}
+    <p>{{ result }}</p>
+    <a href="{{ url_for('index') }}">Upload Another Image</a>
+</body>
+</html>
