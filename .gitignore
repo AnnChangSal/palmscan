@@ -1,5 +1,17 @@
-venv/
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.pyc
+*.pyo
+
+# Virtual environment
+venv/
+
+# Environment variables
 .env
+
+# Media/uploads
 static/uploads/
+
+# System files
+.DS_Store
+Thumbs.db
