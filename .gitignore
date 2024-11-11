@@ -1,6 +1,5 @@
-.env
-config.py
+venv/
 __pycache__/
-.vscode/
-node_modules/
 *.pyc
+.env
+static/uploads/
